@@ -69,6 +69,7 @@
     <!-- main -->
     <main class="my-bg-grey">
         <h1 class="my-text-greenyellow text-center">I tuoi dati inseriti sono :</h1>
+        <!-- DATI FORM -->
         <section class="container-fluid p-5 ">
             <div class="row d-flex justify-content-evenly g-5 my-color-blu text-center">
                 <div class="col-12 col-md-5  rounded-pill my-border-blu">
@@ -107,24 +108,46 @@
             <div class="container">
                 <div class="row d-flex justify-content-evenly g-5 my-color-blu text-center">
                     <div class="col-4">
-                        <button class=" rounded-pill my-border-blu my-text-greenyellow my-bg-grey p-3 fs-3">Genera
+                        <button class=" rounded-pill my-border-blu my-text-greenyellow my-bg-grey p-3 fs-3"
+                            id="generate-ticket">Genera
                             Biglietto</button>
                     </div>
-                    <div class="col-12 col-md-10 d-flex justify-content-center  rounded-pill my-border-blu">
-                        <h1 class="my-text-greenyellow"><span id="discount"></span></h1>
-                    </div>
-                    <div class=" col-12 col-md-6  rounded-pill my-border-blu">
-                        <h2 class="text-white " id="price">Il prezzo da pagare è :</h2>
-                    </div>
+
+
                 </div>
             </div>
 
         </section>
-
+        <!-- STAMPA BIGLIETTO -->
+        <section class="container-fluid p-5 my-bg-grey">
+            <div class="row d-flex justify-content-evenly g-5 my-color-blu text-center ">
+                <div class="col-12 col-md-10 d-flex justify-content-center  rounded-pill my-border-blu">
+                    <h1 class="my-text-greenyellow"><span id="discount"></span></h1>
+                </div>
+                <div class=" col-12 col-md-6  rounded-pill my-border-blu">
+                    <h2 class="text-white " id="price">Il prezzo da pagare è :</h2>
+                </div>
+                <div class="col-12 col-md-5  rounded-pill my-border-blu">
+                    <h2 class="">Il tuo nome è : <span class="my-color-grey" id="fild-name"></span></h2>
+                </div>
+                <div class="col-12 col-md-5 rounded-pill my-border-blu">
+                    <h2>Il tuo cognome è : <span class="my-color-grey" id="fild-last-name"></span></h2>
+                </div>
+                <div class="col-12 col-md-5   rounded-pill my-border-blu">
+                    <h2 class="" id="fild-age">I tuoi anni sono : </h2>
+                </div>
+                <!--      <div class="col-12 col-md-5   rounded-pill my-border-blu">
+                    <h2>Sei nato/a nell'anno : <span class="my-color-grey" id="user-year"></span></h2>
+                </div> -->
+                <div class="col-12 col-md-6 rounded-pill my-border-blu">
+                    <h2>I km che hai inserito sono : <span class="my-color-grey" id="fild-kms"></span></h2>
+                </div>
+            </div>
+        </section>
     </main>
     <!-- footer -->
 
-    <!--  <script src="js/script.js"></script> -->
+    <script src="js/script.js"></script>
 </body>
 
 </html>
