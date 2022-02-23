@@ -1,0 +1,32 @@
+main{
+    height: calc(100vh - 60px);
+}
+
+.my-text-red{
+    color: red;
+}
+
+.my-text-greenyellow{
+    color: greenyellow;
+}
+#fr-logo{
+    height: 50px;
+}
+
+.my-bg-grey{
+    background-color: #33353C;
+}
+
+.my-color-grey{
+    color: #A2A3A6;
+}
+
+.my-color-blu{
+    color: #3EA4AC;
+}
+
+.my-border-blu{
+    border: 2px solid #3EA4AC;;
+  
+}
+
