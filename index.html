@@ -76,13 +76,11 @@
                     <label for="name" class="fs-2">Il tuo nome è :</label>
                     <input type="text" name="" placeholder="Inserisci qui" class="my-bg-grey border-0 my-color-grey "
                         id="name">
-                    <!--  <h2 class="">Il tuo nome è : <span class="my-color-grey" id="name"></span></h2> -->
                 </div>
                 <div class="col-12 col-md-5 rounded-pill my-border-blu">
                     <label for="last-name" class="fs-2">Il tuo cognome è :</label>
                     <input type="text" name="" placeholder="Inserisci qui" class="my-bg-grey border-0 my-color-grey "
                         id="last-name">
-                    <!-- <h2>Il tuo cognome è : <span class="my-color-grey" id="last-name"></span></h2> -->
                 </div>
                 <div class="col-12 col-md-5   rounded-pill my-border-blu">
                     <label for="age" class="fs-2">Seleziona la tua fascia d'età:</label>
@@ -91,25 +89,31 @@
                         <option value="maj">Maggiorenne</option>
                         <option value="over">Over 65</option>
                     </select>
-                    <!--   <h2 class="" id="age">I tuoi anni sono : </h2> -->
                 </div>
-                <div class="col-12 col-md-5   rounded-pill my-border-blu">
+                <!--      <div class="col-12 col-md-5   rounded-pill my-border-blu">
                     <h2>Sei nato/a nell'anno : <span class="my-color-grey" id="user-year"></span></h2>
-                </div>
+                </div> -->
                 <div class="col-12 col-md-6    rounded-pill my-border-blu">
                     <label for="kms" class="fs-2">Iserisci i Km che vuoi percorrere :</label>
                     <input type="number" name="" min="3" placeholder="Inserisci qui"
                         class="my-bg-grey border-0 my-color-grey " id="kms">
-                    <!--  <h2>I km che hai inserito sono : <span class="my-color-grey" id="kms"></span></h2> -->
                 </div>
             </div>
         </section>
+        <!-- BUTTOM -->
         <section>
             <div class="container">
                 <div class="row d-flex justify-content-evenly g-5 my-color-blu text-center">
                     <div class="col-4">
+                        <!-- BUTTOM-GENERATION -->
                         <button class=" rounded-pill my-border-blu my-text-greenyellow my-bg-grey p-3 fs-3"
                             id="generate-ticket">Genera
+                            Biglietto</button>
+                    </div>
+                    <div class="col-4">
+                        <!-- BUTTOM-RESET -->
+                        <button class=" rounded-pill my-border-blu my-text-greenyellow my-bg-grey p-3 fs-3"
+                            id="generate-reset">resetta
                             Biglietto</button>
                     </div>
 
@@ -119,14 +123,9 @@
 
         </section>
         <!-- STAMPA BIGLIETTO -->
-        <section class="container-fluid p-5 my-bg-grey">
+        <section class="container-fluid p-5 my-bg-grey d-none" id="ticken-section">
             <div class="row d-flex justify-content-evenly g-5 my-color-blu text-center ">
-                <div class="col-12 col-md-10 d-flex justify-content-center  rounded-pill my-border-blu">
-                    <h1 class="my-text-greenyellow"><span id="discount"></span></h1>
-                </div>
-                <div class=" col-12 col-md-6  rounded-pill my-border-blu">
-                    <h2 class="text-white " id="price">Il prezzo da pagare è :</h2>
-                </div>
+
                 <div class="col-12 col-md-5  rounded-pill my-border-blu">
                     <h2 class="">Il tuo nome è : <span class="my-color-grey" id="fild-name"></span></h2>
                 </div>
@@ -141,6 +140,12 @@
                 </div> -->
                 <div class="col-12 col-md-6 rounded-pill my-border-blu">
                     <h2>I km che hai inserito sono : <span class="my-color-grey" id="fild-kms"></span></h2>
+                </div>
+                <div class="col-12 col-md-10 d-flex justify-content-center  rounded-pill my-border-blu">
+                    <h1 class="my-text-greenyellow"><span id="discount"></span></h1>
+                </div>
+                <div class=" col-12 col-md-6  rounded-pill my-border-blu">
+                    <h2 class="text-white " id="price">Il prezzo da pagare è :</h2>
                 </div>
             </div>
         </section>

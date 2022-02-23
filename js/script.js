@@ -5,14 +5,14 @@ let elementFildAge = document.getElementById("fild-age");
 let elementFildKms = document.getElementById("fild-kms");
 let elementDiscount = document.getElementById("discount");
 let elementPrice = document.getElementById("price");
-
+let elementTickenSetion = document.getElementById("ticken-section")
 //*RECUPERO L'EMENTO DAL FORM
 let elementName = document.getElementById("name");
 let elementLastName = document.getElementById("last-name");
 let elementAge = document.getElementById("age");
 let elementKms = document.getElementById("kms");
 let elementButtonGenerate = document.getElementById("generate-ticket");
-
+let elementButtonReset = document.getElementById("generate-reset");
 
 
 //* LEGO UN EVENTO AL CLICK AL BOTTONE "GENERA"
@@ -47,17 +47,35 @@ elementButtonGenerate.addEventListener("click", function () {
 
     };
 
+    //* INSERISCO I DATI DEL DOM
+
+    elementFildName.innerHTML = nameValue + " ;";
+    elementFildLastName.innerHTML = lastNameValue + " ;";
+    /* elementFildAge.innerHTML += userAge + " ;"; */
+    /* elementUserYear.innerHTML = userYear + " ;"; */
+    elementFildKms.innerHTML = kmsValue + " ;";
+    elementDiscount.innerHTML = userDiscount + " ;";
+    elementPrice.innerHTML = " Euro " + sum.toFixed(2) + " ;";
+
+    elementTickenSetion.classList.remove("d-none");
 });
 
+//* LEGO UN EVENTO AL CLICK AL BOTTONE "RESETTA"
+elementButtonReset.addEventListener("click", function () {
+    elementName.value = "";
+    elementLastName.value = "";
+    elementAge.value = "maj";
+    elementKms.value = "";
 
+    //* ELIMINO I DATI DEL DOM
+    elementFildName.innerHTML = " ";
+    elementFildLastName.innerHTML = " ";
+    /* elementFildAge.innerHTML += userAge + " ;"; */
+    /* elementUserYear.innerHTML = userYear + " ;"; */
+    elementFildKms.innerHTML = " ";
+    elementDiscount.innerHTML = " ";
+    elementPrice.innerHTML = " ";
 
+    elementTickenSetion.classList.add("d-none");
+});
 
-//* INSERISCO I DATI DEL DOM
-
-elementFildName.innerHTML = nameValue + " ;";
-elementFildLastName.innerHTML = userLastName + " ;";
-elementFildAge.innerHTML += userAge + " ;";
-/* elementUserYear.innerHTML = userYear + " ;"; */
-elementKms.innerHTML = userKms + " ;";
-elementDiscount.innerHTML = userDiscount + " ;";
-elementPrice.innerHTML += " Euro " + sum.toFixed(2) + " ;";
